@@ -1,0 +1,8 @@
+<h1>
+  Creating a room
+</h1>
+
+<%= simple_form_for @room do |form| %>
+  <%= form.input :name %>
+  <%= form.submit "Save", class: 'btn btn-success' %>
+<% end %>

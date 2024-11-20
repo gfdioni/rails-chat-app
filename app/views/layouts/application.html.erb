@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat App</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all' %>
+    <%= javascript_importmap_tags %>
+
+  </head>
+
+  <body class="<%= controller.controller_name %> <%= controller.action_name%>">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <%= render partial: 'shared/navigation_bar' %>
+          <div class="my-3">
+            <%= yield %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

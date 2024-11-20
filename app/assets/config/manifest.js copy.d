@@ -1,0 +1,13 @@
+//= require rails-ujs
+//= require activestorage
+//= require jquery3
+//= require popper
+//= require bootstrap-sprockets
+// = link_tree ../images
+// = link_tree ../../javascript .js
+// = link_tree ../../../vendor/javascript .js
+// = link application.css
+// = link application.js
+// = link_directory ../javascripts .js
+// = link_directory ../javascripts/channels .js
+//= require_tree .
