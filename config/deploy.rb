@@ -9,6 +9,8 @@ set :assets_manifests, -> {
 }
 server "chat-app.asagiri.moe", user: "ubuntu", roles: %w[app db web]
 set :branch, "main"
+Rake::Task["deploy:assets:backup_manifest"].clear_actions
+Rake::Task["deploy:assets:restore_manifest"].clear_actions
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
