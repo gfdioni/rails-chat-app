@@ -49,6 +49,14 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+
+    # Deployment
+    gem "capistrano", "~> 3.17", require: false
+    gem "capistrano-rails", "~> 1.6", ">= 1.6.2", require: false
+    gem "capistrano-passenger", "~> 0.2", ">= 0.2.1", require: false
+    gem "capistrano-rbenv", "~> 2.2", require: false
+    gem "ed25519", ">= 1.2", "< 2.0", require: false
+    gem "bcrypt_pbkdf", ">= 1.0", "< 2.0", require: false
 end
 
 group :development do

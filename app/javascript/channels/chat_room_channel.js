@@ -24,7 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
       },
       received(data) {
         // Clone inside message template and its children
-
+        console.log(data);
+        
         if(data.user_id != user_id)
         {
           messageTemplate = document.querySelector('[data-role="message-template-second"]');
